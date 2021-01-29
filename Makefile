@@ -30,4 +30,4 @@ clean:
 	\rm -f *.o examples/*.o *.so $(WIFI_SCAN) $(EXAMPLES)
 
 shared: wifi_scan.o
-	$(CC) -shared -fPIC -o wifi_scan.so wifi_scan.o $(LDLIBS) 
+	$(CC) -shared -fPIC -o libwifiscan.so wifi_scan.o $(LDLIBS) 
